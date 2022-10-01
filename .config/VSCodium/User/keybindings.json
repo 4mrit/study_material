@@ -1,0 +1,47 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "shift+enter",
+        "command": "extension.insertSemicolonWithNewLine",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+/",
+        "command": "-extension.insertSemicolonWithNewLine",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+/",
+        "command": "-extension.insertSemicolon",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "editor.action.insertLineAfter",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "-editor.action.insertLineAfter",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "-workbench.action.newWindow"
+    },
+    {
+        "key": "ctrl+f1",
+        "command": "editor.action.changeAll",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    { 
+        "key": "ctrl+n",
+        "command": "explorer.newFile"
+        // "when": "editorFocus" 
+    },
+    { 
+        "key": "ctrl+shift+n",
+        "command": "explorer.newFolder"
+        // "when": "editorFocus" 
+    }
+]
